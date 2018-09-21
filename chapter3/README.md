@@ -35,7 +35,7 @@ struct sockaddr_in
     sa_family		sin_family;		//地址族(AF_INET|AF_INET6|...)
     uint16_t		sin_port;		//16位端口号
     struct in_addr	sin_addr;		//32位IP地址
-    char		sin_zero[8];	//占位用(必须填充为0)
+    char		sin_zero[8];		//占位用(必须填充为0)
 }
 
 struct in_addr
