@@ -12,7 +12,7 @@ struct hostent * gethostbyname(const char *hostname);
 
 返回：
 	成功：返回hostent结构体地址
-	失败：返回NULL指针
+	失败：返回 NULL指针
 ```
 
 hostent结构体:
@@ -36,7 +36,7 @@ struct hostent * gethostbyaddr(const char *addr, socklen_t len, int family);
 
 返回：
 	成功：返回hostent结构体地址
-	失败：返回NULL指针
+	失败：返回 NULL指针
 ```
 
 - addr：in_addr 结构体指针
