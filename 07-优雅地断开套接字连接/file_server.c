@@ -45,7 +45,7 @@ int main(int argc, char const *argv[])
 		}
 		write(clnt_sd, buf, BUF_SIZE);
 	}
-	//半关闭:客户端的输出流(传输EOF)
+	//半关闭客户端的输出流(也就传输了EOF)
 	shutdown(clnt_sd, SHUT_WR);
 	read(clnt_sd, buf, BUF_SIZE);
 	printf("Message from client: %s\n", buf);

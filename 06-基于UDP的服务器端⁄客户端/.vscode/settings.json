@@ -1,9 +1,0 @@
-{
-	"files.associations": {
-		"*.tpl": "html",
-		"unistd.h": "c",
-		"stdio.h": "c",
-		"string.h": "c",
-		"stdlib.h": "c"
-	}
-}
