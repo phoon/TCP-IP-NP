@@ -10,7 +10,7 @@
 int epoll_create(int size);
 // 将感兴趣的fd注册进epoll实例的interest list中
 int epoll_ctl(int epfd, int op, int fd, struct epoll_event *event);
-// 阻塞等待当前线程上的IO时间
+// 阻塞等待当前线程上的IO事件
 int epoll_wait(int epfd, struct epoll_event *events,
                int maxevents, int timeout);
 
