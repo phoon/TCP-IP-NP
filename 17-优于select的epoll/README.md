@@ -12,7 +12,7 @@ int epoll_create(int size);
 int epoll_ctl(int epfd, int op, int fd, struct epoll_event *event);
 // 阻塞等待当前线程上的IO时间
 int epoll_wait(int epfd, struct epoll_event *events,
-                      int maxevents, int timeout);
+               int maxevents, int timeout);
 
 typedef union epoll_data {
 	void    *ptr;

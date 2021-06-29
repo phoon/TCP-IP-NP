@@ -21,9 +21,9 @@
 // Compile and link with -pthread.
 #include <pthread.h>
 int pthread_create(pthread_t *restrict thread,
-					const pthread_attr_t *restrict attr,
-					void *(*start_routine)(void *),
-					void *restrict arg);
+                   const pthread_attr_t *restrict attr,
+                   void *(*start_routine)(void *),
+                   void *restrict arg);
 
 返回：
     成功：0
@@ -64,7 +64,7 @@ int pthread_join(pthread_t thread, void **retval);
 #include <pthread.h>
 int pthread_mutex_destroy(pthread_mutex_t *mutex);
 int pthread_mutex_init(pthread_mutex_t *restrict mutex,
-						const pthread_mutexattr_t *restrict attr);
+                       const pthread_mutexattr_t *restrict attr);
 pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 int pthread_mutex_lock(pthread_mutex_t *mutex);
 int pthread_mutex_trylock(pthread_mutex_t *mutex);

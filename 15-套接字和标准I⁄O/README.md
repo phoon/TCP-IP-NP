@@ -19,7 +19,7 @@ FILE *fdopen(int fd, const char *mode);
 
 返回：
     成功：返回转换后的FILE结构体指针
-    失败：NULL
+    失败： NULL
 ```
 
 ```c
